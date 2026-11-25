@@ -1,0 +1,334 @@
+<!doctype html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Максим Шурков — Бизнес-аналитик / Product Owner, HR Tech</title>
+<meta name="description" content="Бизнес-аналитик и Product Owner в HR Tech: SAP HR, WFM, IDM, интеграции. 8+ лет в IT. Москва, удалённо или гибрид.">
+<meta property="og:title" content="Максим Шурков — Бизнес-аналитик / Product Owner">
+<meta property="og:description" content="SAP HR · WFM · интеграции HR-систем · AI-агенты. 8+ лет в IT.">
+<meta property="og:type" content="profile">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet">
+<style>
+:root{
+  --bg:#0E1117; --bg2:#151A23; --card:#1A202B; --line:#2A3240;
+  --text:#E8ECF2; --muted:#9AA4B5; --accent:#FF7A1A; --accent2:#FFB27A;
+  --paper:#F6F7F9; --ink:#141821; --ink2:#4A5465;
+  --mono:'JetBrains Mono',ui-monospace,monospace;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;font-family:Inter,system-ui,sans-serif;background:var(--paper);color:var(--ink);line-height:1.55;-webkit-font-smoothing:antialiased}
+a{color:inherit}
+.wrap{max-width:1080px;margin:0 auto;padding:0 20px}
+.mono{font-family:var(--mono)}
+
+/* nav */
+nav{position:sticky;top:0;z-index:10;background:rgba(14,17,23,.92);backdrop-filter:blur(8px);border-bottom:1px solid var(--line)}
+nav .wrap{display:flex;align-items:center;justify-content:space-between;height:56px;gap:16px}
+nav .logo{color:var(--text);font-weight:800;text-decoration:none;letter-spacing:.02em}
+nav .logo span{color:var(--accent)}
+nav ul{display:flex;gap:22px;list-style:none;margin:0;padding:0}
+nav ul a{color:var(--muted);text-decoration:none;font-size:14px}
+nav ul a:hover{color:var(--text)}
+@media (max-width:720px){nav ul{display:none}}
+
+/* hero */
+header.hero{background:var(--bg);color:var(--text);padding:72px 0 56px;position:relative;overflow:hidden}
+header.hero::after{content:"";position:absolute;right:-120px;top:-120px;width:420px;height:420px;border:1px solid var(--line);border-radius:50%}
+.kicker{font-family:var(--mono);font-size:12px;letter-spacing:.14em;color:var(--accent)}
+h1{font-size:clamp(36px,6vw,60px);line-height:1.05;margin:14px 0 10px;font-weight:800;letter-spacing:-.02em}
+.role{font-size:clamp(18px,2.4vw,22px);color:var(--accent2);font-weight:600;margin:0 0 20px}
+.lead{max-width:700px;color:#C9D0DC;font-size:17px;margin:0 0 28px}
+.cta{display:flex;flex-wrap:wrap;gap:12px}
+.btn{display:inline-flex;align-items:center;gap:8px;min-height:44px;padding:0 20px;border-radius:10px;font-weight:600;text-decoration:none;font-size:15px;border:1px solid var(--line);color:var(--text);background:transparent}
+.btn.primary{background:var(--accent);border-color:var(--accent);color:#111}
+.btn:hover{filter:brightness(1.08)}
+.tags{display:flex;flex-wrap:wrap;gap:8px;margin-top:28px}
+.tag{font-family:var(--mono);font-size:12px;padding:6px 10px;border:1px solid var(--line);border-radius:999px;color:var(--muted)}
+
+/* metrics */
+.metrics{display:grid;grid-template-columns:repeat(4,1fr);gap:14px;margin-top:-28px;position:relative;z-index:2}
+.metric{background:#fff;border:1px solid #E3E6EC;border-radius:14px;padding:20px}
+.metric b{display:block;font-size:30px;font-weight:800;color:var(--ink);letter-spacing:-.02em}
+.metric span{font-size:13px;color:var(--ink2)}
+.metric small{display:block;font-family:var(--mono);font-size:11px;color:#C2560A;margin-top:8px;letter-spacing:.06em}
+@media (max-width:820px){.metrics{grid-template-columns:repeat(2,1fr)}}
+
+section{padding:64px 0 8px}
+h2{font-size:28px;margin:0 0 8px;letter-spacing:-.01em}
+.sub{color:var(--ink2);margin:0 0 28px}
+
+/* value cards */
+.cards{display:grid;grid-template-columns:repeat(3,1fr);gap:14px}
+.card{background:#fff;border:1px solid #E3E6EC;border-radius:14px;padding:22px}
+.card h3{margin:10px 0 6px;font-size:17px}
+.card p{margin:0;color:var(--ink2);font-size:14.5px}
+.ico{width:36px;height:36px;border-radius:10px;background:#FFF1E6;display:grid;place-items:center;color:#C2560A}
+@media (max-width:820px){.cards{grid-template-columns:1fr}}
+
+/* timeline */
+.timeline{position:relative;padding-left:28px}
+.timeline::before{content:"";position:absolute;left:7px;top:6px;bottom:6px;width:2px;background:#E1E4EA}
+.job{position:relative;background:#fff;border:1px solid #E3E6EC;border-radius:14px;padding:22px 22px 18px;margin-bottom:16px}
+.job::before{content:"";position:absolute;left:-27px;top:26px;width:14px;height:14px;border-radius:50%;background:#fff;border:3px solid var(--accent)}
+.job.now::before{background:var(--accent)}
+.job header{display:flex;justify-content:space-between;align-items:baseline;gap:12px;flex-wrap:wrap}
+.job h3{margin:0;font-size:19px}
+.job .date{font-family:var(--mono);font-size:12.5px;color:var(--ink2)}
+.job .pos{font-weight:600;margin:4px 0 2px}
+.job .ctx{color:var(--ink2);font-size:14px;margin:0 0 10px}
+.job ul{margin:0;padding-left:18px}
+.job li{margin:4px 0;font-size:15px}
+.badge{display:inline-block;font-family:var(--mono);font-size:11px;background:var(--accent);color:#111;padding:2px 8px;border-radius:6px;margin-left:8px;vertical-align:middle}
+.early{color:var(--ink2);font-size:14.5px;padding:4px 0 0}
+
+/* skills */
+.skills{display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:14px}
+.skill{background:#fff;border:1px solid #E3E6EC;border-radius:14px;padding:18px}
+.skill h3{font-size:13px;font-family:var(--mono);letter-spacing:.08em;color:#C2560A;margin:0 0 10px;text-transform:uppercase}
+.chips{display:flex;flex-wrap:wrap;gap:6px}
+.chip{font-size:13.5px;background:#F1F3F6;border-radius:8px;padding:5px 9px}
+
+/* projects */
+.dark{background:var(--bg);color:var(--text);margin-top:64px;padding:64px 0}
+.dark .sub{color:var(--muted)}
+.proj{display:grid;grid-template-columns:repeat(3,1fr);gap:14px}
+.p{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:22px}
+.p h3{margin:0 0 6px;font-size:17px}
+.p p{margin:0;color:#B5BDCB;font-size:14.5px}
+.p .stack{margin-top:12px;font-family:var(--mono);font-size:12px;color:var(--accent2)}
+@media (max-width:820px){.proj{grid-template-columns:1fr}}
+
+/* edu + contact */
+.two{display:grid;grid-template-columns:1fr 1fr;gap:14px}
+@media (max-width:720px){.two{grid-template-columns:1fr}}
+.contact{background:#fff;border:1px solid #E3E6EC;border-radius:18px;padding:32px;display:flex;justify-content:space-between;align-items:center;gap:20px;flex-wrap:wrap;margin-bottom:56px}
+.contact .btn{color:var(--ink);border-color:#D5DAE2}
+.contact .btn.primary{color:#111}
+footer{color:var(--ink2);font-size:13px;padding:0 0 40px;text-align:center}
+
+@media print{
+  nav,.cta,.contact .btn{display:none!important}
+  body{background:#fff}
+  header.hero{padding:24px 0}
+  .dark{background:#fff;color:var(--ink)} .p{background:#fff;color:var(--ink)} .p p{color:var(--ink2)}
+  section{padding-top:24px} .job,.card,.skill,.p{break-inside:avoid}
+}
+</style>
+</head>
+<body>
+
+<nav>
+  <div class="wrap">
+    <a class="logo" href="#top">MAX<span>.</span>SHURKOV</a>
+    <ul>
+      <li><a href="#value">Чем полезен</a></li>
+      <li><a href="#experience">Опыт</a></li>
+      <li><a href="#skills">Навыки</a></li>
+      <li><a href="#ai">AI</a></li>
+      <li><a href="#projects">Проекты</a></li>
+      <li><a href="#contact">Контакты</a></li>
+    </ul>
+  </div>
+</nav>
+
+<header class="hero" id="top">
+  <div class="wrap">
+    <div class="kicker">HR TECH · SAP HR · WFM · AI-АГЕНТЫ</div>
+    <h1>Максим Шурков</h1>
+    <p class="role">Бизнес-аналитик / Product Owner</p>
+    <p class="lead">8+ лет строю HR-системы: SAP HR, WFM, IDM и их интеграции. Веду продукт «Рабочее время и мотивация» для ~30 тыс. сотрудников М.Видео-Эльдорадо — от графика смен до табеля и мотивации. Каждый день работаю с AI-агентами и сам собираю автоматизации.</p>
+    <div class="cta">
+      <a class="btn primary" href="https://t.me/max136rus">Написать в Telegram</a>
+      <a class="btn" href="mailto:maxshurkov@ya.ru">maxshurkov@ya.ru</a>
+      <a class="btn" href="javascript:window.print()">Скачать PDF</a>
+    </div>
+    <div class="tags">
+      <span class="tag">Москва</span><span class="tag">удалённо · гибрид · офис</span><span class="tag">командировки — да</span><span class="tag">English B2</span>
+    </div>
+  </div>
+</header>
+
+<div class="wrap">
+  <div class="metrics">
+    <div class="metric"><b>8+ лет</b><span>в IT: аналитика, продукт, проекты</span><small>С 2018</small></div>
+    <div class="metric"><b>~30 тыс.</b><span>сотрудников в периметре HR-продукта</span><small>М.ТЕХ</small></div>
+    <div class="metric"><b>−30%</b><span>срок согласования проектной документации</span><small>VERME</small></div>
+    <div class="metric"><b>10+</b><span>проектов внедрения WFM и IDM</span><small>VERME · OPTISYSTEMS</small></div>
+  </div>
+</div>
+
+<section id="value">
+  <div class="wrap">
+    <h2>Чем буду полезен</h2>
+    <p class="sub">Три вещи, которые я делаю хорошо.</p>
+    <div class="cards">
+      <div class="card">
+        <div class="ico" aria-hidden="true"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 12h4l3 8 4-16 3 8h4"/></svg></div>
+        <h3>Понимаю HR-процесс целиком</h3>
+        <p>Прогноз нагрузки → график смен → учёт времени → табель Т-13 → мотивация и зарплата. Вижу, где ломается цепочка и как это починить.</p>
+      </div>
+      <div class="card">
+        <div class="ico" aria-hidden="true"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M8 7l-5 5 5 5M16 7l5 5-5 5"/></svg></div>
+        <h3>Говорю с бизнесом и разработкой</h3>
+        <p>BPMN, User Stories, SRS — для бизнеса. REST/SOAP, SQL, Swagger — для разработки. Перевожу одно в другое без потерь.</p>
+      </div>
+      <div class="card">
+        <div class="ico" aria-hidden="true"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12l5 5L20 7"/></svg></div>
+        <h3>Довожу до приёмки</h3>
+        <p>Стандарт постановки и DoD, согласованные тест-кейсы, контроль план-факт. Задача закрыта, когда бизнес принял результат.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="experience">
+  <div class="wrap">
+    <h2>Опыт</h2>
+    <p class="sub">Retail, WFM-вендор, интегратор, контакт-центр, банки.</p>
+    <div class="timeline">
+
+      <article class="job now">
+        <header><h3>М.Тех <span class="badge">СЕЙЧАС</span></h3><span class="date">авг 2023 — сейчас</span></header>
+        <p class="pos">Бизнес-аналитик, консультант SAP HR</p>
+        <p class="ctx">IT-компания группы М.Видео-Эльдорадо. HR-продукт «Рабочее время и мотивация»: Verme WFM → SAP HR → личный кабинет сотрудника, DAU ~25 тыс.</p>
+        <ul>
+          <li>Ввёл единый стандарт постановки задач и DoD — меньше возвратов из тестирования, релизы стали предсказуемыми.</li>
+          <li>Запустил контроль план-факт по графикам и табелям: KPI-дашборды на SQL для HR и руководителей розницы.</li>
+          <li>Автоматизировал ежедневную сверку смен, табелей и биометрии (SQL, Greenplum) — ручная проверка ушла.</li>
+          <li>Наставник аналитиков; связываю внутреннюю и внешнюю разработку с заказчиками из HR и бизнеса.</li>
+        </ul>
+      </article>
+
+      <article class="job">
+        <header><h3>OptiSystems</h3><span class="date">2018–2019 · 2021–2023</span></header>
+        <p class="pos">Бизнес-аналитик</p>
+        <p class="ctx">Интегратор: внедрение IDM и WFM у крупных заказчиков.</p>
+        <ul>
+          <li>Вёл требования от интервью с топ-менеджментом заказчика до приёмки: AS-IS / TO-BE, Use Case, SRS.</li>
+          <li>Спроектировал ролевую модель доступа и интеграции IDM с Active Directory, HR-системами и SAP.</li>
+          <li>Выстроил приёмку через согласованные тест-кейсы — доработки сдавались бизнесу с первого раза.</li>
+          <li>Готовил демо-стенды WFM и пресейл; представлял продукт на выставке CCWF.</li>
+        </ul>
+      </article>
+
+      <article class="job">
+        <header><h3>VERME</h3><span class="date">окт 2019 — сен 2021</span></header>
+        <p class="pos">Консультант по внедрению WFM-систем</p>
+        <p class="ctx">WFM-платформа: прогноз потребности в персонале, графики, учёт рабочего времени.</p>
+        <ul>
+          <li>Вёл несколько внедрений параллельно — от обследования до опытной эксплуатации, в т.ч. у госзаказчиков.</li>
+          <li>Проектировал интеграции с SAP HR, 1С и ERP; готовил ТЗ, ПМИ, руководства, обучал пользователей.</li>
+          <li>Сократил срок согласования проектной документации на 30%, держал SLA по заказчикам.</li>
+          <li>Запустили Telegram-бот поддержки: закрывал ~50% обращений без участия команды.</li>
+        </ul>
+      </article>
+
+      <article class="job">
+        <header><h3>Цезарь Сателлит</h3><span class="date">июл 2016 — сен 2018</span></header>
+        <p class="pos">Ведущий аналитик мониторинга и отчётности</p>
+        <ul>
+          <li>Прогнозировал нагрузку и потребность в операторах; построил KPI-отчётность контакт-центра.</li>
+          <li>Описал процессы в ARIS и Visio, настраивал маршрутизацию обращений в Avaya.</li>
+        </ul>
+      </article>
+
+      <p class="early">До IT, 2009–2016: Сбербанк, Связной банк — клиентские операции, претензионная работа, 115-ФЗ; руководил отделом.</p>
+    </div>
+  </div>
+</section>
+
+<section id="skills">
+  <div class="wrap">
+    <h2>Навыки</h2>
+    <p class="sub">Инструменты, которыми пользуюсь в работе.</p>
+    <div class="skills">
+      <div class="skill"><h3>Анализ и продукт</h3><div class="chips"><span class="chip">Сбор требований</span><span class="chip">BPMN</span><span class="chip">UML</span><span class="chip">User Stories</span><span class="chip">Бэклог и роадмап</span><span class="chip">ТЗ / ПМИ / SRS</span></div></div>
+      <div class="skill"><h3>Системы</h3><div class="chips"><span class="chip">SAP HR</span><span class="chip">Verme WFM</span><span class="chip">IDM</span><span class="chip">1С / ERP</span><span class="chip">Active Directory</span><span class="chip">Avaya</span></div></div>
+      <div class="skill"><h3>Интеграции и данные</h3><div class="chips"><span class="chip">REST / SOAP</span><span class="chip">Postman</span><span class="chip">Swagger</span><span class="chip">MS SQL</span><span class="chip">Greenplum</span><span class="chip">Python</span><span class="chip">Excel / VBA</span></div></div>
+      <div class="skill"><h3>Процессы</h3><div class="chips"><span class="chip">Jira</span><span class="chip">Confluence</span><span class="chip">Miro</span><span class="chip">ARIS</span><span class="chip">Agile / Scrum</span></div></div>
+      <div class="skill"><h3>AI и вайбкодинг</h3><div class="chips"><span class="chip">AI-агенты</span><span class="chip">Claude Code</span><span class="chip">MCP</span><span class="chip">Локальные LLM</span><span class="chip">RAG</span><span class="chip">Telegram-боты</span></div></div>
+    </div>
+  </div>
+</section>
+
+<section id="ai">
+  <div class="wrap">
+    <h2>AI в моей работе</h2>
+    <p class="sub">Аналитик, который не ждёт разработку, а сам собирает рабочий прототип с AI-агентами.</p>
+    <div class="cards ai">
+      <div class="card">
+        <div class="ico" aria-hidden="true"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 6h16M4 12h10M4 18h7"/></svg></div>
+        <h3>Требования и документация</h3>
+        <p>С AI готовлю черновики User Stories, SRS и описаний процессов, проверяю требования на полноту и противоречия, пишу и разбираю SQL-запросы. Время уходит на смысл, а не на оформление.</p>
+      </div>
+      <div class="card">
+        <div class="ico" aria-hidden="true"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M8 7l-5 5 5 5M16 7l5 5-5 5M14 4l-4 16"/></svg></div>
+        <h3>Агентная разработка</h3>
+        <p>Claude Code и MCP: сам собираю ботов, скрипты и интеграции — от идеи до работающего инструмента. Прототип показываю бизнесу раньше, чем пишется ТЗ.</p>
+      </div>
+      <div class="card">
+        <div class="ico" aria-hidden="true"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="4" y="4" width="16" height="16" rx="3"/><path d="M9 9h6v6H9z"/></svg></div>
+        <h3>Локальные LLM и приватность</h3>
+        <p>Ollama, LM Studio, домашний LLM-сервер, RAG. Понимаю, когда данные нельзя отдавать в облако и как построить AI-решение внутри контура.</p>
+      </div>
+      <div class="card">
+        <div class="ico" aria-hidden="true"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 12a8 8 0 0 1 14-5.3M20 12a8 8 0 0 1-14 5.3M18 3v4h-4M6 21v-4h4"/></svg></div>
+        <h3>Автоматизация рутины</h3>
+        <p>AI-пайплайны: сбор данных, генерация текста, согласование человеком и публикация. Тот же подход — для отчётов и сверок в HR-процессах.</p>
+      </div>
+      <div class="card">
+        <div class="ico" aria-hidden="true"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="3"/><path d="M12 3v3M12 18v3M3 12h3M18 12h3"/></svg></div>
+        <h3>AI в HR-продуктах</h3>
+        <p>Вижу точки применения в HR Tech: прогноз нагрузки, подсказки по графикам, ответы сотрудникам в личном кабинете, разбор обращений в поддержку.</p>
+      </div>
+      <div class="card">
+        <div class="ico" aria-hidden="true"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 3l8 4v5c0 5-3.5 8-8 9-4.5-1-8-4-8-9V7z"/></svg></div>
+        <h3>Трезвый взгляд</h3>
+        <p>AI — инструмент, а не магия: проверяю результат, держу человека в контуре согласования и считаю, где автоматизация окупается.</p>
+      </div>
+    </div>
+    <div class="chips" style="margin-top:18px"><span class="chip">Claude Code</span><span class="chip">ChatGPT</span><span class="chip">MCP</span><span class="chip">OpenRouter</span><span class="chip">Ollama</span><span class="chip">LM Studio</span><span class="chip">RAG</span><span class="chip">Prompt engineering</span><span class="chip">Telegram Bot API</span><span class="chip">Python</span></div>
+  </div>
+</section>
+
+<div class="dark" id="projects">
+  <div class="wrap">
+    <h2>Пет-проекты</h2>
+    <p class="sub">Собираю сам — от идеи до запуска.</p>
+    <div class="proj">
+      <div class="p"><h3>Telegram-канал на автопилоте</h3><p>AI-агенты собирают новости, готовят посты и отправляют на согласование перед публикацией.</p><div class="stack">Python · LLM · Telegram Bot API</div></div>
+      <div class="p"><h3>Домашний LLM-сервер</h3><p>Локальные модели, свои боты и MCP-интеграции — без зависимости от облака.</p><div class="stack">Ollama · LM Studio · MCP</div></div>
+      <div class="p"><h3>Дашборд дешёвых авиабилетов</h3><p>Дважды в день собирает цены на перелёты из Москвы. В работе — агрегатор маркетплейсов РФ.</p><div class="stack">Python · scraping · HTML</div></div>
+    </div>
+  </div>
+</div>
+
+<section>
+  <div class="wrap two">
+    <div class="card"><h3>Образование</h3><p>Институт экономики и права, 2009 — «Финансы и кредит», экономист.<br>Курс REST API — GeekBrains, 2020.</p></div>
+    <div class="card"><h3>Языки</h3><p>Русский — родной.<br>Английский — B2.</p></div>
+  </div>
+</section>
+
+<section id="contact">
+  <div class="wrap">
+    <div class="contact">
+      <div>
+        <h2>Открыт к предложениям</h2>
+        <p class="sub" style="margin:0">Бизнес-аналитик · Product Owner · Руководитель IT-проектов. Москва, удалённо или гибрид.</p>
+      </div>
+      <div class="cta">
+        <a class="btn primary" href="https://t.me/max136rus">Telegram @max136rus</a>
+        <a class="btn" href="mailto:maxshurkov@ya.ru">Написать на почту</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer>© 2026 Максим Шурков</footer>
+</body>
+</html>
